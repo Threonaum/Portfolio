@@ -1,25 +1,64 @@
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="#">
-            <img src="<?= $env_logo ?>" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            <?= $env_name ?>
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-                <?php for ($i = 0; $i < count($env_page); $i++) {
-                    if ($i !== 0){ ?>
-                    <li class="nav-item">
-                        <?php if ($i === $page_id) {  ?>
-                        <a class="nav-link active" style="text-decoration: underline" href="<?= $env_page[$i]['url'] ?>"><?= $env_page[$i]['name'] ?></a>
-                        <?php } else {  ?>
-                        <a class="nav-link" href="<?= $env_page[$i]['url'] ?>"><?= $env_page[$i]['name'] ?></a>
-                        <?php } ?>
-                    </li>
-                <?php }} ?>
-            </ul>
-        </div>
-    </div>
+<nav>
+    <ul class="nav justify-content-end">
+        <li class="nav-item name">
+            Kevin MUZIAK
+        </li>
+        <li class="nav-item">
+            <button class="cta">
+                <span class="hover-underline-animation"> A Propos </span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+                ></path>
+                </svg>
+            </button>
+        </li>
+        <li class="nav-item">
+        <button class="cta">
+                <span class="hover-underline-animation"> Mes Projets </span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+                ></path>
+                </svg>
+            </button>
+        </li>
+        <li class="nav-item">
+        <button class="cta">
+                <span class="hover-underline-animation"> Me Contacter </span>
+                <svg
+                    id="arrow-horizontal"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="30"
+                    height="10"
+                    viewBox="0 0 46 16"
+                >
+                <path
+                id="Path_10"
+                data-name="Path 10"
+                d="M8,0,6.545,1.455l5.506,5.506H-30V9.039H12.052L6.545,14.545,8,16l8-8Z"
+                transform="translate(30)"
+                ></path>
+                </svg>
+            </button>
+        </li>
+    </ul>
 </nav>
