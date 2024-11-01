@@ -7,7 +7,7 @@
 
 <main>
 
-    <p><?= $env_titre ?></p>
+    <p><?= $cp_apropos() ?></p>
 
 </main>
 
